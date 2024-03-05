@@ -76,7 +76,7 @@
   <section id="intro">
     <div class="intro-container wow fadeIn">
       <h1 class="mb-4 pb-0"> Курс з астрології <br> у Вінниці<br> з <span color="f82249"> Наталією Індіго </span></h1>
-	  <h2 class="mb-4 pb-0"> Старт курсу:  01.04.2024</h2>
+	  <h2 class="mb-4 pb-0"> Старт курсу: <span color="f82249"> 01.04.2024 </span></h2>
       <p class="mb-4 pb-0"> Особливість курсу: вивчення астрології та одночасна практичне застосування знань у вигляді обговорення своїх гороскопів у форматі кола підтримки. <br>Такий формат надасть вам можливість отримати діагностику ваших гороскопів і практичних рекомендацій щодо подальшого життя з ними</p>
       <a href="#about" class="about-btn scrollto">Записатися на навчання</a>
     </div>
@@ -177,7 +177,6 @@
     </div>
     <div class="text-center">
       <button id="show-more-btn">Показати більше</button>
-      <button id="show-less-btn" style="display: none;">Показати менше</button>
     </div>
   </div>
 </section>
@@ -322,6 +321,102 @@
 </div>
 
 
+    <section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Як відбувається навчання</h2>
+          <p>Погляньте зсередини</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">
+        <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/1.jpg" alt=""></a>
+        <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/2.jpg" alt=""></a>
+        <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/3.jpg" alt=""></a>
+        <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/4.jpg" alt=""></a>
+        <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/5.jpg" alt=""></a>
+        <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/6.jpg" alt=""></a>
+        <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.jpg" alt=""></a>
+        <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.jpg" alt=""></a>
+      </div>
+
+    </section>
+
+
+ <div class="container-fluid gallery-container">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery">
+              <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery">
+                <img src="img/gallery/1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery">
+              <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery">
+                <img src="img/gallery/2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery">
+              <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery">
+                <img src="img/gallery/3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery">
+              <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery">
+                <img src="img/gallery/4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery">
+              <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery">
+                <img src="img/gallery/5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery">
+              <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery">
+                <img src="img/gallery/6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery">
+              <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery">
+                <img src="img/gallery/7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery">
+              <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery">
+                <img src="img/gallery/8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
     <section id="faq" class="wow fadeInUp">
 
       <div class="container">
@@ -455,7 +550,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   showMoreBtn.addEventListener('click', function() {
-    itemsShown = Math.min(itemsShown + 5, scheduleItems.length); // Increment items shown by 5 but do not exceed the total
+    itemsShown = Math.min(itemsShown + 99, scheduleItems.length); // Increment items shown by 5 but do not exceed the total
     renderItems();
     if (itemsShown === scheduleItems.length) {
       showMoreBtn.style.display = 'none'; // Hide button if all items are shown

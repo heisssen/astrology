@@ -425,6 +425,8 @@ h6 {
   width: 260px;
   overflow-y: auto;
   transition: 0.4s;
+  z-index: 999;
+
 }
 
 #mobile-nav ul {
@@ -1423,6 +1425,50 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #e0072f;
 }
 
+.feature-highlight {
+  background-color: #f8f9fa; /* Light grey background for contrast */
+  border-left: 4px solid #f82249; /* A colored border for emphasis */
+  padding: 20px; /* Spacing around the text */
+  margin: 20px 0; /* Space above and below the element */
+  position: relative; /* For pseudo-element positioning */
+}
+
+.feature-highlight::before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Adjust as needed */
+  left: 0;
+  width: 50px; /* Width of the decorative line */
+  height: 3px; /* Thickness of the decorative line */
+  background: #f82249; /* Color of the decorative line */
+}
+
+.feature-highlight h3 {
+  color: #f82249; /* Brand color for the heading */
+  margin-bottom: 10px; /* Spacing after the heading */
+  font-weight: bold; /* Bold font for the heading */
+}
+
+.feature-highlight p {
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  color: #333; /* Darker text color for better readability */
+}
+
+/* Optional: Add an icon or image */
+.feature-icon {
+  float: left; /* Align icon to the left */
+  margin-right: 15px; /* Space between icon and text */
+  color: #f82249; /* Icon color */
+}
+
+/* Clear float */
+.feature-clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 /*--------------------------------------------------------------
 # Buy Tickets Section
 --------------------------------------------------------------*/
@@ -1837,6 +1883,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #mobile-nav-toggle {
     display: inline;
+	z-index: 1000; /* High z-index */
+	cursor: pointer; /* Ensure it's clickable */
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 15px 15px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+
   }
 
   #intro .intro-container {
@@ -1850,6 +1911,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   #intro p {
     font-size: 16px;
   }
+  
+  #intro .course-start-date {
+  color: #fff;
+  background: #f82249;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+#intro .course-feature {
+  font-size: 20px; /* Larger font size */
+  line-height: 1.8;
+  color: #fff;
+  background: #f82249; /* More vibrant background */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  margin: 20px auto; /* centering the block */
+  display: block; /* ensure it takes the full width */
+  max-width: 80%; /* max width to maintain readability */
+}
 
   #schedule .nav-tabs a {
     padding: 8px 60px;
