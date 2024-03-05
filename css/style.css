@@ -576,6 +576,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
+#intro h2 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
 #intro h1 span {
   color: #f82249;
 }
