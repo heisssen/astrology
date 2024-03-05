@@ -1904,3 +1904,42 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-right: 15px;
   }
 }
+
+
+@media only screen and (max-width: 768px) { /* or another breakpoint that suits your design */
+  #header #logo h1 {
+    font-size: 20px; /* Smaller font size */
+    margin-top: 0; /* Adjust margin as needed */
+    padding: 5px 0; /* Adjust padding as needed */
+    text-align: center; /* Center logo if needed */
+  }
+
+  #header #logo h1 a {
+    display: block; /* Makes the phone number take its own line */
+    margin-bottom: 5px; /* Adds space below the phone number */
+  }
+
+  #nav-menu-container {
+    clear: both; /* Clears the float */
+    float: none; /* Stops floating the menu */
+    text-align: center; /* Center-align the menu items */
+  }
+
+  .nav-menu a {
+    padding: 5px; /* Reduces padding around menu items for smaller screens */
+    font-size: 12px; /* Smaller font size for the menu */
+  }
+
+  .nav-menu li.buy-tickets a {
+    padding: 5px 15px; /* Adjust the padding for the button */
+    font-size: 12px; /* Adjust the font size for the button */
+  }
+}
+
+/* Additional styles to ensure telephone number visibility */
+#header #logo h1 a[href^="tel:"] {
+  color: #fff; /* or any color that makes the phone number visible */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds contrast for readability */
+  border-radius: 5px; /* Optional: rounds the corners of the background */
+  padding: 5px 10px; /* Padding inside the background */
+}
