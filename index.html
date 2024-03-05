@@ -44,35 +44,42 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
-    <div class="container wow fadeInUp">
 
-      <div id="logo" class="pull-left">
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
-      </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Головна</a></li>
-          <li><a href="#target-audience">Для кого</a></li>
-          <li><a href="#what-you-get">Переваги</a></li>
-          <li><a href="#schedule">Програма</a></li>
-          <li><a href="#speakers-details">Викладач</a></li>
-          <li><a href="#buy-tickets">Ціна</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
+<header id="header">
+  <div class="container wow fadeInUp">
+    <div id="logo" class="pull-left">
+      <h1><a href="#intro">СІРІУС</a></h1> <!-- Replace with your logo if available -->
+	   <div class="header-contact">
+        <a href="tel:+380682115067" class="phone-number">(068) 211 50 67</a>
+	   </div>
     </div>
-  </header><!-- #header -->
+    
+    <div class="header-extra-info">
+      <span class="course-start-date">Курс починається: 18.11.2023</span>
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+		<li class="menu-active"><a href="#intro">Головна</a></li>
+        <li><a href="#target-audience">Для кого</a></li>
+        <li><a href="#what-you-get">Переваги</a></li>
+        <li><a href="#schedule">Програма</a></li>
+        <li><a href="#speakers-details">Викладач</a></li>
+        <li><a href="#buy-tickets">Ціна</a></li>
+        <li><a href="#faq">FAQ</a></li>      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->
+
+
 
   <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
     <div class="intro-container wow fadeIn">
-      <h1 class="mb-4 pb-0"> Очний курс з астрології з <br> <span color="f82249">Наталією Індіго </span> у м. Вінниця</h1>
+      <h1 class="mb-4 pb-0"> Курс з астрології <br> у Вінниці<br> з <span color="f82249"> Наталією Індіго </span></h1>
       <p class="mb-4 pb-0">Особливість курсу: вивчення астрології та одночасна практичне застосування знань у вигляді обговорення своїх гороскопів у форматі кола підтримки. <br>Такий формат надасть вам можливість отримати діагностику ваших гороскопів і практичних рекомендацій щодо подальшого життя з ними</p>
       <a href="#about" class="about-btn scrollto">Записатися на навчання</a>
     </div>
@@ -156,6 +163,32 @@
 
 </section>
 
+    <!--==========================
+      Schedule Section
+    ============================-->
+
+
+
+<section id="schedule">
+  <div class="container wow fadeInUp">
+    <div class="section-header">
+      <h2>Програма</h2>
+      <p>Ознайомтеся зі знаннями, котрі ви можете отримати пройшовши курс.</p>
+    </div>
+    <div id="schedule-list">
+      <!-- Schedule items will be dynamically inserted here by JavaScript -->
+    </div>
+    <div class="text-center">
+      <button id="show-more-btn">Показати більше</button>
+      <button id="show-less-btn" style="display: none;">Показати менше</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
 <section id="what-you-get">
   <div class="container">
@@ -170,7 +203,7 @@
         <div class="icon mb-3">
           <i class="fas fa-chart-pie fa-5x"></i>
         </div>
-        <h3><b>Практичний досвід</b></h3>
+        <h5><b>Практичний досвід</b></h5>
         <p>Опановуйте астрологію через практику: аналізуйте власні гороскопи в колі підтримки. Ви навчитеся діагностувати особистісні гороскопи та отримаєте рекомендації для життя</p>
       </div>
 
@@ -179,7 +212,7 @@
         <div class="icon mb-3">
           <i class="fas fa-chart-line fa-5x"></i>
         </div>
-        <h3><b>Підтвердження знань</b></h3>
+        <h5><b>Підтвердження знань</b></h5>
         <p>Здобудьте сертифікат після курсу і приєднуйтесь до нашої підтримуючої спільноти для застосування знань і подальшого розвитку у колі однодумців.</p>
       </div>
 
@@ -188,7 +221,7 @@
         <div class="icon mb-3">
           <i class="fas fa-user fa-5x"></i>
         </div>
-        <h3><b>Досвідчений наставник</b></h3>
+        <h5><b>Досвідчений наставник</b></h5>
         <p>Курс веде Наталія Індіго – кваліфікований астролог і психолог з десятилітнім досвідом. За її керівництвом ви відкриєте астрологію як компас у світі зірок.</p>
       </div>
 
@@ -197,7 +230,7 @@
         <div class="icon mb-3">
           <i class="fas fa-building fa-5x"></i>
         </div>
-        <h3><b>Освітні матеріали</b></h3>
+        <h5><b>Освітні матеріали</b></h5>
         <p>Студенти отримують детальний посібник по курсу і постійний онлайн-супровід від автора, що забезпечить глибоке занурення у всі аспекти астрології</p>
       </div>
     </div>
@@ -206,332 +239,91 @@
 
 
 
-    <!--==========================
-      Schedule Section
-    ============================-->
-    <section id="schedule">
-      <div class="container wow fadeInUp ">
-        <div class="section-header">
-          <h2>Програма</h2>
-        </div>
-        <h3 class="sub-heading">Ознайомтеся зі знаннями, котрі ви можете отримати пройшовши курс.</h3>
 
-        <div class="tab-content row justify-content-center">
-
-          <!-- Schdule Day 1 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Тема 1</time></div>
-			  <div class="col-md-10">
-                <h4>Програма курсу та Кодекс честі астролога</h4>
-                <p>Огляд програми курсу "Астрологія для початківців" та обговорення Кодексу честі астролога. Введення у поняття знаків зодіаку як програми душі. Огляд усіх планет Сонячної системи.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Тема 2</time></div>
-              <div class="col-md-10">
-                <h4>Особові, соціальні та вищі планети</h4>
-                <p>Класифікація планет за їх впливом на особистісний, соціальний та духовний розвиток людини.</p>
-              </div>
-            </div>
-			
-			  <div class="row schedule-item">
-              <div class="col-md-2"><time>Тема 3</time></div>
-              <div class="col-md-10">
-                <h4>Побудова гороскопу: Стихії та квадранти</h4>
-                <p>Основи побудови гороскопа, розгляд стихій та квадрантів. Включення планет у карту та їх характеристика. Алгоритм визначення синтетичного знаку.</p>
-              </div>
-            </div>
-			
-			  <div class="row schedule-item">
-              <div class="col-md-2"><time>Тема 4</time></div>
-              <div class="col-md-10">
-                <h4>Характеристика та закони планет Сонячної системи</h4>
-                <p>Детальний огляд планет Сонячної системи у контексті астрології. Поняття казімі, диспозиції, ретроградності, рецепції.</p>
-              </div>
-            </div>
-			
-			  <div class="row schedule-item">
-              <div class="col-md-2"><time>Тема 5</time></div>
-              <div class="col-md-10">
-                <h4>Характеристика та класифікація знаків зодіаку</h4>
-                <p>Вивчення характеристик та класифікації знаків зодіаку</p>
-              </div>
-            </div>
-			
-			  <div class="row schedule-item">
-              <div class="col-md-2"><time>Тема 6</time></div>
-              <div class="col-md-10">
-                <h4>Сонце та Місяць в знаках</h4>
-                <p>Аналіз впливу Сонця та Місяця у різних знаках зодіаку.</p>
-              </div>
-            </div>
-			
-			  <div class="row schedule-item">
-              <div class="col-md-2"><time>Тема 7</time></div>
-              <div class="col-md-10">
-                <h4>Венера та Марс в знаках</h4>
-                <p>Роль та значення Венери та Марса в знаках зодіаку.	</p>
-              </div>
-            </div>
-
-
-          </div>
-          <!-- End Schdule Day 1 -->
-
-          <!-- Schdule Day 2 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 2 -->
-
-          <!-- Schdule Day 3 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 2 -->
-
-        </div>
-
-      </div>
-
-    </section>
 	
 	
-	<section id="speakers-details" class="wow fadeIn">
-      <div class="container">
-        <div class="section-header">
-          <h2>Хто буде навчати</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-          </div>
-
-          <div class="col-md-6">
-            <div class="details">
-              <h2>Наталія Індіго</h2>
-			  <p class="sub-heading"> <i> Експерт з астропсихології та засновник Школи астрології "Сіріус" </i></p>
-              <p>Захоплення перетворилося на місію: я, Наталія Індіго, ваш провідник у світ зірок та самопізнання, веду вас через магію астрології до глибокого розуміння власної особистості. З 2013 року я викладаю астрологію, веду курси та семінари, зосереджуючись на астропсихології, і маю честь бути частиною трансформаційного шляху сотень жінок. Вони відкрили для себе багатство внутрішнього світу, навчились любити себе і знайшли свій унікальний шлях до жіночої сили та соціального успіху.</p>
-			  <p> Моя професійна практика протягом 9 років була наповнена історіями успіху та відкриттів. У ролі дружини та матері я знаю, як важливо зберігати баланс і гармонію в особистому житті. Життя – це подорож самовдосконалення та самовираження, і кожна людина заслуговує відкрити своє справжнє "Я".</p> 
-
-              <p>Мій курс "Астрологія" – це не просто набір знань, це ключ, який відкриє вам двері до самопізнання і дозволить жити повноцінним, гармонійним життям, наповненим змістом і радістю. Якщо ваше серце прагне змін, ваш розум шукає відповідей, а душа жадає глибини – приєднуйтесь до нас, і разом ми розкриємо таємниці вашої унікальної астрологічної карти	!</p>
-			</div>
-          </div>
-          
-        </div>
-      </div>
-
-    </section>
-
-   
-
-   
-
-
-    <!--==========================
-      Buy Ticket Section
-    ============================-->
-  <!--==========================
-  Buy Course Section
-===========================-->
-<section id="buy-tickets" class="section-with-bg wow fadeInUp">
+<section id="speakers-details" class="wow fadeIn">
   <div class="container">
-
     <div class="section-header">
-      <h2>Придбати курс</h2>
-      <p>Одна універсальна пропозиція для всіх.</p>
+      <h2>Хто буде навчати</h2>
     </div>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Повний доступ</h5>
-            <h6 class="card-price text-center">$350</h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Повний доступ до матеріалів курсу</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Індивідуальні консультації</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Ексклюзивні вебінари</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Доступ до закритої спільноти</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Персоналізований підхід</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Сертифікат про закінчення</li>
-            </ul>
-            <hr>
-            <div class="text-center">
-              <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="exclusive-access">Купити зараз</button>
-            </div>
+    <div class="row speaker-content">
+      <div class="col-md-6">
+        <img src="img/speakers/1.jpg" alt="Наталія Індіго" class="img-fluid speaker-image">
+      </div>
+      <div class="col-md-6">
+        <div class="details">
+          <h3 class="speaker-name">Наталія Індіго</h3>
+		  <p class="speaker-intro"> <i> Експерт з астропсихології та засновник Школи астрології "Сіріус"</p>
+          <!-- Speaker bio and details -->
+          <div class="bio">
+			<p>Захоплення перетворилося на місію: я, Наталія Індіго, ваш провідник у світ зірок та самопізнання, веду вас через магію астрології до глибокого розуміння власної особистості. З 2013 року я викладаю астрологію, веду курси та семінари, зосереджуючись на астропсихології, і маю честь бути частиною трансформаційного шляху сотень жінок. Вони відкрили для себе багатство внутрішнього світу, навчились любити себе і знайшли свій унікальний шлях до жіночої сили та соціального успіху.</p>
+			<p> Моя професійна практика протягом 9 років була наповнена історіями успіху та відкриттів. У ролі дружини та матері я знаю, як важливо зберігати баланс і гармонію в особистому житті. Життя – це подорож самовдосконалення та самовираження, і кожна людина заслуговує відкрити своє справжнє "Я".</p> 
+			<p>Мій курс "Астрологія" – це не просто набір знань, це ключ, який відкриє вам двері до самопізнання і дозволить жити повноцінним, гармонійним життям, наповненим змістом і радістю. Якщо ваше серце прагне змін, ваш розум шукає відповідей, а душа жадає глибини – приєднуйтесь до нас, і разом ми розкриємо таємниці вашої унікальної астрологічної карти	!</p>
           </div>
         </div>
       </div>
     </div>
-
   </div>
+</section>
+   
 
+<section id="course-payment" class="wow fadeIn">
+  <div class="container">
+    <div class="section-header">
+      <h2>Оплата курсу</h2>
+      <p>Оплативши курс, ви отримаєте:</p>
+    </div>
 
-      <!-- Modal Order Form -->
-      <div id="buy-ticket-modal" class="modal fade">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Залишити контакти для зв'язку</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form method="POST" action="#">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-name" placeholder="Ваше ім'я">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-email" placeholder="Ваш Email">
-                <div class="text-center">
-				
-                  <button type="submit" class="btn">Відправити</button>
-                </div>
-              </form>
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="payment-info">
+          <div class="payment-details">
+            <h3>Ціна курсу</h3>
+            <p class="price">25 000 грн</p>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>5 місяців - тривалість курсу</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Живі онлайн-заняття в ZOOM 1 раз на тиждень</li>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>Тривалість заняття - 3-4 години</li>
+              <!-- Additional benefits -->
+            </ul>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Залишити контакти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </section>
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Форма зворотнього зв'язку</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- Add form fields here -->
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Ваше ім'я">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Ваш email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="4" placeholder="Ваше повідомлення"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Відправити</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <section id="faq" class="wow fadeInUp">
 
@@ -608,9 +400,86 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
+  
+  
+  
+ <script>
+ 
+document.addEventListener('DOMContentLoaded', function() {
+  const scheduleItems = [
+    // Add your schedule items here as objects
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+    { time: 'Тема 1', title: 'Програма курсу та Кодекс честі астролога', description: 'Your Description 1' },
+
+    // ...add all your other schedule items...
+  ];
+
+  const scheduleList = document.getElementById('schedule-list');
+  const showMoreBtn = document.getElementById('show-more-btn');
+  const showLessBtn = document.getElementById('show-less-btn');
+  let itemsShown = 3; // Show 3 items initially
+
+  function renderItems() {
+    scheduleList.innerHTML = ''; // Clear the list first
+    scheduleItems.slice(0, itemsShown).forEach(item => { // Show only a slice of items
+      const itemElement = document.createElement('div');
+      itemElement.classList.add('schedule-item', 'show');
+      itemElement.innerHTML = `
+        <div class="row">
+          <div class="col-md-2"><time>${item.time}</time></div>
+          <div class="col-md-10">
+            <h4>${item.title}</h4>
+            <p>${item.description}</p>
+          </div>
+        </div>`;
+      scheduleList.appendChild(itemElement);
+    });
+  }
+
+  showMoreBtn.addEventListener('click', function() {
+    itemsShown = Math.min(itemsShown + 5, scheduleItems.length); // Increment items shown by 5 but do not exceed the total
+    renderItems();
+    if (itemsShown === scheduleItems.length) {
+      showMoreBtn.style.display = 'none'; // Hide button if all items are shown
+    }
+    showLessBtn.style.display = 'inline-block'; // Show 'show less' button
+  });
+
+  showLessBtn.addEventListener('click', function() {
+    itemsShown = 3; // Reset to initial 3 items
+    renderItems();
+    showMoreBtn.style.display = 'inline-block'; // Show 'show more' button
+    showLessBtn.style.display = 'none'; // Hide 'show less' button
+  });
+
+  renderItems(); // Initial rendering of items
+});
+
+
+ 
+ </script>
+
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>

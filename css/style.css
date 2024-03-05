@@ -151,9 +151,45 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  transition: all 0.5s;
-  z-index: 997;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 9999;
+  transition: all 0.4s;
 }
+
+.header-extra-info {
+  position: absolute;
+  right: 50px; /* Adjust this value to position the elements correctly */
+  top: 22px; /* Align with the height of your header */
+  text-align: right;
+}
+
+.header-extra-info .phone-number,
+.header-extra-info .course-start-date {
+  color: #fff;
+  display: block; /* Each on a new line */
+}
+
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Adjust the spacing as per your design */
+  color: red;
+}
+
+.header-contact .phone-number,
+.header-contact .course-start-date {
+  color: #fff;
+  margin: 0; /* Removes default margins for a tighter look */
+}
+
 
 #header.header-scrolled,
 #header.header-fixed {
@@ -164,13 +200,13 @@ h6 {
 }
 
 #header #logo h1 {
-  font-size: 36px;
+  font-size: 28px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  afont-family: "Raleway", sans-serif;
   font-weight: 700;
-  letter-spacing: 3px;
+  aletter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -255,8 +291,9 @@ h6 {
 /* Nav Meu Container */
 
 #nav-menu-container {
-  float: right;
   margin: 0;
+  float: right;
+  padding-right: 50px; /* Add padding to avoid overlapping with extra info */
 }
 
 /* Nav Meu Styling */
@@ -461,6 +498,29 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
+
+.nav-menu li.buy-tickets {
+  position: relative;
+  padding-left: 20px; /* Or any value that looks good */
+}
+
+.nav-menu li.buy-tickets a {
+  background: #f82249; /* This should be your brand's primary color */
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 20px;
+  white-space: nowrap; /* Ensure the text stays on one line */
+  transition: background-color 0.3s;
+  margin-left: 20px; /* Space from the previous menu item */
+  font-weight: bold; /* Make it bold */
+}
+
+.nav-menu li.buy-tickets a:hover, .nav-menu li.buy-tickets a:focus {
+  background: #dc3545; /* A slightly darker shade for the hover state */
+  color: #fff;
+  text-decoration: none; /* Remove underline on hover */
+}
+
 
 /*--------------------------------------------------------------
 # Intro Section
@@ -751,45 +811,59 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers-details {
   padding: 60px 0;
+  background-color: #f8f8f8; /* Light background to offset the section */
 }
 
-#speakers-details .details h2 {
+.section-header h2 {
   color: #112363;
-  font-size: 28px;
+  font-size: 32px; /* Slightly larger for importance */
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* Increased bottom margin */
 }
 
-#speakers-details .details .social {
-  margin-bottom: 15px;
+.section-header .speaker-intro {
+  color: #555; /* Subdued color for less importance */
+  font-size: 18px;
+  margin-bottom: 30px; /* Increased bottom margin */
 }
 
-#speakers-details .details .social a {
-  background: #e9edfb;
+.speaker-content {
+  align-items: center; /* Align image and text vertically */
+}
+
+.speaker-image {
+  max-width: 100%;
+  border-radius: 10px; /* Rounded corners for the image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.details .speaker-name {
   color: #112363;
-  line-height: 1;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  padding-top: 9px;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px; /* Increased bottom margin */
 }
 
-#speakers-details .details .social a:hover {
-  background: #f82249;
+.details .bio {
+  color: #666;
+  font-size: 16px; /* Larger font size for readability */
+  margin-bottom: 25px; /* Increased bottom margin */
+}
+
+.details .btn-outline-primary {
+  border-color: #112363;
+  color: #112363;
+  padding: 10px 25px;
+  border-radius: 50px; /* Rounded button edges */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.details .btn-outline-primary:hover {
+  background-color: #112363;
   color: #fff;
 }
 
-#speakers-details .details .social a i {
-  font-size: 18px;
-}
 
-#speakers-details .details p {
-  color: #112363;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
 
 
 #target-audience {
@@ -819,6 +893,42 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+.speaker-intro h2 {
+  color: #333; /* Darker text for name */
+  font-size: 26px; /* Large size for name */
+  font-weight: bold;
+  margin-bottom: 4px; /* Reduced bottom margin */
+  text-align: left;
+}
+
+.speaker-intro p {
+  color: #555; /* Softer color for subtitle */
+  font-size: 16px; /* Smaller size for subtitle */
+  font-style: italic; /* Italicize subtitle */
+  margin-bottom: 0; /* No space below the subtitle */
+  text-align: left;
+  padding-top: 50vh;
+  margin-bottom: 10vh;
+}
+
+/* If you want to highlight the title (subtitle) further */
+.speaker-intro p:before {
+  content: '"';
+  color: #555;
+}
+
+.speaker-intro p:after {
+  content: '"';
+  color: #555;
+}
+
+.speaker-intro {
+  padding-bottom: 10px; /* Reduced padding */
+  border-bottom: 1px solid #ddd; /* Light border for separation */
+  margin-bottom: 20px; /* Reduced margin below the section */
+}
+
+
 
 
 
@@ -829,6 +939,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 #schedule {
   padding: 60px 0 60px 0;
 }
+
+/* Add this in addition to your existing styles */
+#schedule .schedule-item {
+  display: none; /* hide all schedule items initially */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#schedule .schedule-item.show {
+  display: block; /* show the item */
+  opacity: 1; /* fade the item in */
+}
+
+
 
 #schedule .nav-tabs {
   text-align: center;
@@ -869,10 +993,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  transition: background-color ease-in-out 0.3s;
+  display: none; /* Initially hide all items */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 #schedule .schedule-item:hover {
@@ -919,6 +1043,51 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #152b79;
   margin-bottom: 0;
 }
+
+.hidden {
+  display: none;
+}
+
+.fadeout-effect {
+  height: 50px;
+  background: linear-gradient(to bottom, transparent, #fff 75%);
+  position: relative;
+  bottom: 50px; /* Adjust based on your specific layout */
+  pointer-events: none;
+}
+
+
+#show-more-btn,
+#show-less-btn {
+  display: inline-block;
+  background-color: #f82249; /* Your Brand Color */
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#show-more-btn:hover,
+#show-less-btn:hover {
+  background-color: #dc3545; /* Darker shade for hover effect */
+}
+
+#show-more-btn:active,
+#show-less-btn:active {
+  transform: scale(0.98); /* Slight press down effect */
+}
+
+/* Utility class to hide buttons */
+.hide {
+  display: none;
+}
+
 
 #what-you-get {
   padding: 60px 0 60px 0;
@@ -1249,77 +1418,94 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Buy Tickets Section
 --------------------------------------------------------------*/
 
-#buy-tickets {
+#course-payment {
   padding: 60px 0;
+  background-color: #f8f8f8; /* Or your preferred background color */
 }
 
-#buy-tickets .card {
-  border: none;
-  border-radius: 5px;
-  transition: all  0.3s ease-in-out;
-  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
-}
-
-#buy-tickets .card:hover {
-  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
-}
-
-#buy-tickets .card hr {
-  margin: 25px 0;
-}
-
-#buy-tickets .card .card-title {
-  margin: 10px 0;
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-#buy-tickets .card .card-price {
-  font-size: 48px;
-  margin: 0;
-}
-
-#buy-tickets .card ul li {
+#course-payment .section-header h2 {
+  color: #112363;
+  font-size: 32px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
-#buy-tickets .card .text-muted {
-  opacity: 0.7;
+#course-payment .section-header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
 }
 
-#buy-tickets .card .btn {
-  font-size: 15px;
+#course-payment .payment-info {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space before the modal button if needed */
+}
+
+#course-payment .payment-info .price {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+#course-payment .payment-info ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+#course-payment .payment-info ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+#course-payment .payment-info ul li .fa-li {
+  color: #5cb85c; /* Adjust color as needed */
+}
+
+#course-payment .payment-info .btn-primary {
+  background-color: #112363; /* Adjust button color as needed */
+  color: #ffffff;
+  padding: 10px 20px;
   border-radius: 50px;
-  padding: 10px 40px;
-  transition: all 0.2s;
-  background-color: #f82249;
-  border: 0;
-  color: #fff;
+  font-weight: 700;
+  border: none;
 }
 
-#buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+.modal-dialog {
+  max-width: 800px; /* Wider modal */
 }
 
-#buy-tickets #buy-ticket-modal input,
-#buy-tickets #buy-ticket-modal select {
-  border-radius: 0;
+.modal-content {
+  padding: 20px;
 }
 
-#buy-tickets #buy-ticket-modal .btn {
-  font-size: 15px;
+.modal-header .close {
+  margin: -20px -20px -20px auto;
+}
+
+.modal-body form .form-control {
+  margin-bottom: 15px; /* Spacing between form fields */
+}
+
+.modal-body form .btn-success {
+  background-color: #28a745; /* Success button color */
+  color: #ffffff;
+  padding: 10px 20px;
   border-radius: 50px;
-  padding: 10px 40px;
-  transition: all 0.2s;
-  background-color: #f82249;
-  border: 0;
-  color: #fff;
+  border: none;
 }
 
-#buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #e0072f;
+/* Additional responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 90%; /* Full width on smaller screens */
+  }
 }
+
+
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1696,5 +1882,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
+  
+  
+  @media (max-width: 768px) {
+  .header-extra-info {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #nav-menu-container {
+    padding-right: 15px;
   }
 }
