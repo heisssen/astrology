@@ -1074,10 +1074,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #gallery .owl-item {
   border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
-  object-fit:contin;
-  
+  border-right: 2px solid #fff;  
 }
+
+#gallery .owl-item img {
+  width: 100%; /* Задает ширину изображения 100% от ширины контейнера */
+  height: auto; /* Высота автоматически изменяется, чтобы сохранить пропорции изображения */
+  object-fit: contain; /* Убедитесь, что изображение помещается полностью в контейнер, сохраняя пропорции */
+  display: block; /* Устраняет проблемы с вертикальными отступами */
+}
+	
 
 #gallery .owl-dot {
   display: inline-block;
