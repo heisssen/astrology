@@ -1074,16 +1074,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #gallery .owl-item {
   border-left: 2px solid #fff;
-  border-right: 2px solid #fff;  
+  border-right: 2px solid #fff;
 }
-
-#gallery .owl-item img {
-  width: 100%; /* Задает ширину изображения 100% от ширины контейнера */
-  height: auto; /* Высота автоматически изменяется, чтобы сохранить пропорции изображения */
-  object-fit: contain; /* Убедитесь, что изображение помещается полностью в контейнер, сохраняя пропорции */
-  display: block; /* Устраняет проблемы с вертикальными отступами */
-}
-	
 
 #gallery .owl-dot {
   display: inline-block;
@@ -1109,6 +1101,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 4px;
   background: #fff;
   z-index: 1;
+  padding: 0; /* Set padding to 0 */
+
+}
+
+#gallery .owl-carousel .owl-item img {
+  width: 100%;  /* Set the image width */
+  height: 300px; /* Set the image height */
+  object-fit: cover; /* Stretch the image to fill the container */
+  padding: 10px;
 }
 
 
